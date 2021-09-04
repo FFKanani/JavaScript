@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div onmousemove="myfun(event) onmouseout="clearCoo()"></div>
+    <h2> Javascript Functions</h2>
+    <p>This examples calls the function</p>
+    <p id ="demo"></p>
+    <img  onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src= "FL.jpg"  alt = "Smiley" width="50px" height="50px">
+    <script>
+        function myfun(e){
+            var x = e.ClientX;
+            var y = e.ClientY;
+            var coor = "Coordinates: (" + x + " ," + y + " )";
+            document.getElementById("demo").innerHTML = coor;
+        }
+        function clercoo(){
+            document.getElementById("demo").innerHTML = "";
+        }
+       function bigImg(x){
+           x.style.height = "110px";
+            x.style.width = "110px";
+       }
+       function normalImg(x){
+           x.style.height = "40px";
+            x.style.width = "40px";
+       }
+        /*function myfunction(p1,p2)
+        {
+            return p1  +  p2 ;
+        }
+        document.getElementById("demo").innerHTML = myfunction(7,15);*/
+
+    </script>
+</body>
+</html>

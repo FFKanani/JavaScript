@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <h1> Welcome to the techtorium..!!!</h1>
+    <p>Hello...Everyone...</p>
+    <p id="demo"></p>
+    <p> Never call document.write after the document has finished loading. it will overwrite 
+        the whole document.
+    </p>
+      <button type="button" onclick="document.write(8/4)">will you try it..!!</button> 
+    <script>
+        var name = "Ali"
+        var surname = "Surani"
+        document.getElementById("demo").innerHTML = name + " " + surname;
+        var x= 10;
+        var y= 20;
+        var z = x + y;
+        document.getElementById("demo").innerHTML = 
+        "The Value of z is: " + z;
+        var person = "john Doe", carName = "Priyus", price = 200;
+        document.getElementById("demo").innerHTML = carName;
+        
+        
+        document.write(5*3);
+        document.getElementById("demo").innerHTML = 5 + 3;
+        window.alert(7 * 9);
+        console.log(33 + 3);
+        
+    </script>
+</body>
+</html>
